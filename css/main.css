@@ -49,12 +49,12 @@ body {
   background-color: #fff;
   -webkit-transition: width .3s;
   transition: width .3s;
-  background-color: black;
   right: 0;
 }
 
 .burger-btn__bars {
   width: 100%;
+  top: 2px;
 }
 
 .burger-btn__bars::after {
@@ -63,7 +63,7 @@ body {
 }
 
 .burger-btn__bars::before {
-  top: 27px;
+  top: 26px;
   width: 30%;
   -webkit-transition-delay: .1s;
           transition-delay: .1s;

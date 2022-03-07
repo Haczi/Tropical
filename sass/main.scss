@@ -52,12 +52,13 @@ body{
 }
 &__bars{
     width: 100%;
+    top: 2px;
     &::after{
         top: 13px;
         width: 60%;
     }
     &::before{
-        top: 27px;
+        top: 26px;
         width: 30%;
         transition-delay: .1s;
     }
