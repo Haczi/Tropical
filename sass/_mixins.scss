@@ -7,3 +7,10 @@
     right: 0;
 
 }
+
+@mixin heroImages($bgImg){
+  background-image: $blue-gradient, url($bgImg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
