@@ -6,7 +6,7 @@
 
 .white-block{
     position: absolute;
-    height: 1.5em;
+    height: 1.6em;
     width: 60%;
     background:$pure-white;
     &-left{
@@ -16,9 +16,10 @@
         
     }
     &-right{
-        top: 0;
+        top: -5px;
         right: -50px;
         transform: skew(45deg);
+        
 
     }
 
