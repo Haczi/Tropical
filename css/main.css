@@ -71,7 +71,7 @@
 }
 
 .section-padding {
-  padding: 6em 2em;
+  padding: 4em 2em;
 }
 
 @media (min-width: 768px) {
@@ -104,7 +104,6 @@
 html {
   font-size: 62, 5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -501,7 +500,7 @@ body {
 
 .offers {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/maldives-ge98313117_640.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -524,7 +523,6 @@ body {
   margin: 2em 0;
   -webkit-box-shadow: 5px 5px 10px #2e2e2e2e;
           box-shadow: 5px 5px 10px #2e2e2e2e;
-  overflow: hidden;
 }
 
 .offers__option-img {
@@ -549,7 +547,7 @@ body {
 .offers__option-heading {
   margin-bottom: .5em;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.8rem;
   color: #fff;
 }
 
@@ -562,7 +560,8 @@ body {
 .offers__option-btn {
   margin: 1em auto;
   padding: 1em;
-  width: 80%;
+  width: 90%;
+  height: 60px;
   background-color: #fff;
   border: none;
   border-radius: 25px;
@@ -571,12 +570,62 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #2e2e2e;
+  text-align: center;
 }
 
 .offers__option-btn::before {
   background-color: #eee;
+}
+
+@media (max-width: 700px) {
+  .reviews.section-padding {
+    padding: 2em 0;
+  }
+  .reviews__box-quote {
+    font-size: 0.8rem;
+    margin-bottom: 0.2em;
+  }
+  .reviews__box-text {
+    font-size: 1.2rem;
+  }
+}
+
+.reviews__box {
+  position: relative;
+  margin: 2.5em 1.5em;
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+  border-radius: 8px;
+  padding: 2em;
+}
+
+.reviews__box-img {
+  position: absolute;
+  top: -8%;
+  left: 75%;
+  -webkit-transform: translate(-50, -50%);
+          transform: translate(-50, -50%);
+}
+
+.reviews__box-img img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviews__box-quote {
+  margin-bottom: .5em;
+  font-size: 3rem;
+  color: #1755e7;
+}
+
+.reviews__box-text {
+  margin-bottom: 1em;
+  color: #2e2e2e;
 }
 
 @media (min-width: 576px) {
@@ -725,10 +774,10 @@ body {
         justify-content: space-around;
   }
   .offers__option-heading {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
   .offers__option-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
