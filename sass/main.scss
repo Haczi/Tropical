@@ -125,6 +125,8 @@ body {
 }
 
 //head
+
+
 .header {
 	position: relative;
 	display: flex;
@@ -160,6 +162,16 @@ body {
 
 		&::before {
 			background-color: $light-white;
+		}
+	}
+}
+
+@media(max-height: 322px){
+	.header{
+		height: 100vh;
+		&__btn{
+			font-size: 1rem;
+			margin-top: .5em;
 		}
 	}
 }
@@ -400,24 +412,7 @@ body {
 }
 }
 //section reviews
-@media(max-width: 700px){
-	.reviews.section-padding{
-		padding: 2em 0;
-	}
-	.reviews{
-		// z-index: 5;
-		&__box{
 
-			&-quote{
-				font-size: 0.8rem; 
-				margin-bottom: 0.2em;
-			}
-			&-text{
-				font-size: 1.2rem;
-			}
-		}
-	}
-}
 
 .reviews{
 	&__box{
@@ -452,7 +447,24 @@ body {
 		}
 	}
 }
+@media(max-width: 700px){
+	.reviews.section-padding{
+		padding: 2em 0;
+	}
+	.reviews{
+		// z-index: 5;
+		&__box{
 
+			&-quote{
+				font-size: 1.8rem; 
+				margin-bottom: 0.2em;
+			}
+			&-text{
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
 
 
 //*********************
