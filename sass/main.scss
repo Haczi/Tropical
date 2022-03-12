@@ -466,6 +466,111 @@ body {
 	}
 }
 
+//contact
+.contact{
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+	.white-block-left{
+		background-color: $dark;
+	}
+	&__form, &__form-top{
+		display: flex;
+		flex-direction: column;
+	}
+	&__form{
+		text-transform: uppercase;
+		&-top{
+			margin-bottom: 1em;
+		}
+		&-input{
+			margin-bottom: .5em;
+			@include contactForm;
+		}
+		&-textarea{
+			@include contactForm;
+			max-width: 100%;
+			min-width: 100%;
+			min-height: 300px;
+		}
+		&-btn{
+			align-self: flex-end;
+			padding: .6em 4em;
+			font-size: 1.2rem;
+			width: 30%;
+			background-color: $main-color;
+			border: none;
+			border-radius: 8px;
+			color: $light-white;
+
+			&::before{
+				background-color: $secondary-color;
+			}
+		}
+	}
+
+}
+
+//footer
+
+.footer{
+	background-color: $dark;
+	color: $light-white;
+
+	.wrapper{
+		padding: 4em 1em 2em;
+	}
+	&__box{
+		margin-bottom: 1em;
+		&-title{
+			margin-bottom: 1em;
+			font-size: 2rem;
+		}
+		p{
+			margin-bottom: 1em;
+			font-size: 1.4rem;
+		}
+		&-social{
+			font-size: 4rem;
+		}
+		&-link{
+			color: $light-white;
+			padding: 0 .2em;
+			transition: color .3s;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:hover{
+				color: $main-color;
+			}
+		}
+		&-desktop{
+			display: none;
+		}
+		&-list{
+			list-style: none;
+			&-item{
+				margin: .5em 0;
+				a{
+					text-decoration: none;
+					color: $light-white;
+					padding: .5em 0;
+					transition: color .3s, font-size .3s;
+					&:hover{
+						color: $main-color;
+						font-size: 1.7rem;
+					}
+				}
+				
+				}
+			}
+		}
+	
+	&__bottom-text{
+		padding: 1em 0;
+		text-align: center;
+	}
+}
 
 //*********************
 //MEDIA
@@ -560,7 +665,23 @@ body {
 			}
 		}
 	}
-	
+	.footer{
+		&__boxes{
+			display: flex;
+			justify-content: space-around;
+		}
+		&__box{
+			width: 25%;
+			margin: 0 1em;
+			&:first-child{
+				width: 50%;
+			}
+
+			&-desktop{
+				display: block;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
