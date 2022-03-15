@@ -499,14 +499,17 @@ body {
 			min-height: 300px;
 		}
 		&-btn{
-			align-self: flex-end;
-			padding: .6em 4em;
+			display: block;
+	        align-self: flex-end;
+			padding: .6em;
+			width: 40%;
 			font-size: 1.2rem;
-			width: 30%;
 			background-color: $main-color;
 			border: none;
 			border-radius: 8px;
 			color: $light-white;
+			
+			
 
 			&::before{
 				background-color: $secondary-color;
